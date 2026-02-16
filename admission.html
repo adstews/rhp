@@ -76,12 +76,14 @@
     .price-icon{font-size:16px}
 
     /* ── Accordion / FAQ ── */
-    .faq{background:#fff}
-    amp-accordion section{border:1px solid #e2e8f0;border-radius:10px;margin-bottom:10px;overflow:hidden}
-    amp-accordion h4{background:#fff;padding:16px 20px;font-size:15px;font-weight:700;color:#1a365d;cursor:pointer;display:flex;align-items:center;justify-content:space-between;margin:0}
+    .faq{background:#f7fafc}
+    amp-accordion{border:none}
+    amp-accordion section{border:1px solid #e2e8f0;border-radius:10px;margin-bottom:10px;overflow:hidden;background:#fff}
+    amp-accordion section>*{background:#fff}
+    amp-accordion h4{background:#fff;padding:16px 20px;font-size:15px;font-weight:700;color:#1a365d;cursor:pointer;display:flex;align-items:center;justify-content:space-between;margin:0;border:none;outline:none}
     amp-accordion h4::after{content:"+";font-size:20px;color:#68d391;font-weight:700}
     amp-accordion section[expanded] h4::after{content:"−"}
-    amp-accordion .acc-content{padding:0 20px 16px;font-size:14px;color:#718096;line-height:1.6}
+    amp-accordion .acc-content{padding:4px 20px 16px;font-size:14px;color:#718096;line-height:1.6;background:#fff}
 
     /* ── CTA Banner ── */
     .cta-banner{background:#1a365d;color:#fff;padding:48px 0;text-align:center}
