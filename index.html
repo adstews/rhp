@@ -388,7 +388,7 @@
       <p class="section-sub">Fill out the form and our team will reach out within 24 hours. All inquiries are confidential.</p>
     </div>
     <div class="container">
-      <form method="post" action-xhr="https://api.web3forms.com/submit" target="_top">
+      <form method="post" action-xhr="/api/submit" target="_top" on="submit-success:AMP.navigateTo(url='/thank-you')">
         <input type="hidden" name="access_key" value="d81a1a70-8cbd-430d-907b-6750108d3a41">
         <input type="hidden" name="subject" value="New Inquiry — Right Path House">
         <input type="hidden" name="from_name" value="Right Path House Website">
@@ -423,7 +423,7 @@
         <button type="submit" class="btn-submit">Send Confidential Inquiry</button>
         <div class="form-note">100% confidential. No obligation. We're here to help.</div>
         <div submit-success>
-          <div class="submit-success">Thank you! We'll be in touch within 24 hours.</div>
+          <div class="submit-success">Thank you! Redirecting...</div>
         </div>
         <div submit-error>
           <div class="submit-error">Something went wrong. Please call us directly at <a href="tel:+12033391191" style="color:#9b2c2c;font-weight:700">(203) 339-1191</a>.</div>
