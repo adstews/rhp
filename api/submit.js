@@ -19,7 +19,7 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    // req.body is already parsed by Vercel (form-urlencoded or JSON)
+    // req.body is already parsed by Vercel
     const formData = req.body || {};
 
     // Build URL-encoded string to forward to Web3Forms
@@ -30,12 +30,15 @@ module.exports = async function handler(req, res) {
       }
     }
 
-    // Forward as form-urlencoded (what Web3Forms expects)
+    // Forward to Web3Forms with browser-like headers
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'Origin': 'https://www.right-path-house.com',
+        'Referer': 'https://www.right-path-house.com/',
+        'User-Agent': 'Mozilla/5.0 (compatible; RightPathHouse/1.0)'
       },
       body: params.toString(),
     });
