@@ -1,0 +1,398 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <title>Right Path House — Structured Sober Living</title>
+  <link rel="canonical" href=".">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="description" content="Right Path House offers structured sober living in a safe, supportive community. Take the next step in your recovery journey today.">
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-custom>
+    /* ── Reset & Base ── */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,sans-serif;color:#2d3748;line-height:1.6;background:#fff;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%}
+
+    /* ── Utility ── */
+    .container{width:100%;max-width:600px;margin:0 auto;padding:0 20px}
+    .text-center{text-align:center}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+    /* ── Header / Nav ── */
+    header{background:#1a365d;padding:14px 0;position:sticky;top:0;z-index:100}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .logo{color:#fff;font-size:18px;font-weight:700;letter-spacing:-.3px}
+    .logo span{color:#68d391}
+    .nav-cta{background:#68d391;color:#1a365d;padding:8px 18px;border-radius:6px;font-size:14px;font-weight:600;transition:opacity .2s}
+    .nav-cta:active{opacity:.8}
+
+    /* ── Gallery ── */
+    .gallery{padding:32px 0 24px;background:#f7fafc}
+    .gallery .section-title{margin-bottom:16px}
+    .gallery-carousel amp-img{border-radius:8px;overflow:hidden;margin-right:8px}
+    .gallery-carousel amp-img img{object-fit:cover}
+
+    /* ── Hero ── */
+    .hero{background:url('images/hero-bg.jpg') center/cover no-repeat;color:#fff;padding:56px 0 48px;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,54,93,.85) 0%,rgba(42,74,127,.75) 100%);z-index:1}
+    .hero .container{position:relative;z-index:2}
+    .hero::after{content:"";position:absolute;bottom:-40px;left:-10%;width:120%;height:80px;background:#fff;border-radius:50%;z-index:2}
+    .hero h1{font-size:28px;line-height:1.25;font-weight:800;margin-bottom:12px;letter-spacing:-.5px}
+    .hero h1 em{font-style:normal;color:#68d391}
+    .hero p{font-size:16px;opacity:.9;margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto}
+    .btn-primary{display:inline-block;background:#68d391;color:#1a365d;padding:14px 36px;border-radius:8px;font-size:16px;font-weight:700;letter-spacing:.2px;box-shadow:0 4px 14px rgba(104,211,145,.4);transition:transform .15s,box-shadow .15s}
+    .btn-primary:active{transform:scale(.97);box-shadow:0 2px 8px rgba(104,211,145,.3)}
+    .hero-phone{display:block;margin-top:16px;font-size:15px;font-weight:600;color:#bee3f8;letter-spacing:.3px}
+
+    /* ── Trust Bar ── */
+    .trust-bar{padding:28px 0 20px;text-align:center;border-bottom:1px solid #e2e8f0}
+    .trust-items{display:flex;justify-content:center;gap:28px;flex-wrap:wrap}
+    .trust-item{font-size:13px;color:#718096;font-weight:600;display:flex;align-items:center;gap:6px}
+    .trust-icon{font-size:18px}
+
+    /* ── Section Shared ── */
+    section{padding:48px 0}
+    .section-label{text-transform:uppercase;font-size:12px;font-weight:700;letter-spacing:1.5px;color:#68d391;margin-bottom:8px}
+    .section-title{font-size:24px;font-weight:800;color:#1a365d;margin-bottom:8px;letter-spacing:-.3px}
+    .section-sub{font-size:15px;color:#718096;margin-bottom:32px;max-width:480px}
+    .text-center .section-sub{margin-left:auto;margin-right:auto}
+
+    /* ── Features ── */
+    .features{background:#f7fafc}
+    .feature-grid{display:grid;grid-template-columns:1fr;gap:20px}
+    .feature-card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.08);border:1px solid #e2e8f0}
+    .feature-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
+    .fi-blue{background:#ebf8ff;color:#3182ce}
+    .fi-green{background:#f0fff4;color:#38a169}
+    .fi-purple{background:#faf5ff;color:#805ad5}
+    .fi-orange{background:#fffaf0;color:#dd6b20}
+    .feature-card h3{font-size:17px;font-weight:700;color:#1a365d;margin-bottom:6px}
+    .feature-card p{font-size:14px;color:#718096;line-height:1.55}
+
+    @media(min-width:420px){
+      .feature-grid{grid-template-columns:1fr 1fr}
+    }
+
+    /* ── How It Works ── */
+    .steps{counter-reset:step}
+    .step{display:flex;gap:16px;margin-bottom:28px;position:relative}
+    .step:last-child{margin-bottom:0}
+    .step-num{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:#1a365d;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+    .step-content h3{font-size:16px;font-weight:700;color:#1a365d;margin-bottom:2px}
+    .step-content p{font-size:14px;color:#718096}
+    .step-line{position:absolute;left:17px;top:40px;width:2px;height:calc(100% - 12px);background:#e2e8f0}
+    .step:last-child .step-line{display:none}
+
+    /* ── Testimonials ── */
+    .testimonials{background:#f7fafc}
+    .testimonial-card{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 1px 3px rgba(0,0,0,.08);border:1px solid #e2e8f0;margin:0 4px}
+    .stars{color:#ecc94b;font-size:16px;margin-bottom:10px;letter-spacing:2px}
+    .testimonial-card blockquote{font-size:15px;color:#4a5568;line-height:1.6;margin-bottom:14px;font-style:italic}
+    .testimonial-author{display:flex;align-items:center;gap:10px}
+    .author-avatar{width:36px;height:36px;border-radius:50%;background:#e2e8f0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#1a365d}
+    .author-avatar-img{border-radius:50%;overflow:hidden;flex-shrink:0}
+    .author-info{font-size:13px}
+    .author-name{font-weight:700;color:#1a365d}
+    .author-detail{color:#a0aec0}
+
+    /* ── Owner Reply ── */
+    .owner-reply{margin-top:14px;padding:12px 14px;background:#f0fff4;border-left:3px solid #68d391;border-radius:0 8px 8px 0;font-size:13px;color:#2d3748;line-height:1.5}
+    .owner-reply-label{font-weight:700;color:#1a365d;margin-bottom:4px;font-size:12px}
+    .owner-reply p{font-style:normal;margin:0}
+
+    /* ── Contact / Form ── */
+    .contact{background:#1a365d;color:#fff;padding:48px 0 56px}
+    .contact .section-label{color:#68d391}
+    .contact .section-title{color:#fff}
+    .contact .section-sub{color:#a0c4e8}
+    .form-group{margin-bottom:16px}
+    .form-group label{display:block;font-size:13px;font-weight:600;margin-bottom:4px;color:#bee3f8}
+    .form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:#fff;font-size:15px;font-family:inherit;outline:none;transition:border-color .2s}
+    .form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,.4)}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#68d391}
+    .form-group textarea{resize:vertical;min-height:90px}
+    .form-group select option{color:#1a365d}
+    .btn-submit{width:100%;padding:14px;background:#68d391;color:#1a365d;border:none;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;letter-spacing:.2px}
+    .btn-submit:active{opacity:.9}
+    .form-note{font-size:12px;color:#a0c4e8;margin-top:12px;text-align:center}
+    .form-phone-alt{text-align:center;margin-top:20px;font-size:15px;color:#bee3f8}
+    .form-phone-alt a{color:#68d391;font-weight:700}
+
+    /* ── Footer ── */
+    footer{background:#14263e;color:#a0c4e8;padding:32px 0;text-align:center;font-size:13px}
+    footer .logo{font-size:16px;margin-bottom:10px;display:inline-block}
+    .footer-address{margin-bottom:6px}
+    .footer-phone{color:#68d391;font-weight:600;font-size:14px;margin-bottom:12px;display:inline-block}
+    .footer-links{margin-bottom:12px}
+    .footer-links a{color:#a0c4e8;margin:0 10px;font-size:12px}
+    .footer-copy{font-size:11px;color:#5a7a9e}
+
+    /* ── Form Responses ── */
+    .submit-success{background:#f0fff4;color:#22543d;border-radius:8px;padding:16px;text-align:center;font-weight:600}
+    .submit-error{background:#fff5f5;color:#9b2c2c;border-radius:8px;padding:16px;text-align:center;font-weight:600}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">Right Path <span>House</span></div>
+        <a href="tel:+15551234567" class="nav-cta">Call Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Sober Living Can Be<br><em>The Difference</em></h1>
+      <p>Recovery housing isn't just a place to stay—it's so much more. In fact, it's a proven way to start on your journey to long-term recovery.</p>
+      <a href="#contact" class="btn-primary">Get Started Today</a>
+      <a href="tel:+15551234567" class="hero-phone">Or call: (555) 123-4567</a>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item"><span class="trust-icon">&#127968;</span> Sober Living</div>
+        <div class="trust-item"><span class="trust-icon">&#128179;</span> Private Pay</div>
+        <div class="trust-item"><span class="trust-icon">&#127891;</span> 200+ Alumni</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container text-center">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Everything You Need to Thrive</h2>
+      <p class="section-sub">Our program is designed to support long-term sobriety with structure, community, and professional guidance.</p>
+    </div>
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon fi-blue">&#127968;</div>
+          <h3>Safe Housing</h3>
+          <p>Clean, furnished rooms in a drug- and alcohol-free environment with 24/7 house management.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon fi-green">&#129309;</div>
+          <h3>Peer Support</h3>
+          <p>Live alongside others committed to recovery. Weekly house meetings and group accountability.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon fi-purple">&#128218;</div>
+          <h3>Life Skills</h3>
+          <p>Employment assistance, budgeting workshops, and daily living skills to rebuild independence.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon fi-orange">&#128736;</div>
+          <h3>Recovery Program</h3>
+          <p>Required meeting attendance, optional counseling referrals, and structured daily routines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section>
+    <div class="container text-center">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Your Path Forward</h2>
+      <p class="section-sub">Getting started is simple. We walk with you every step of the way.</p>
+    </div>
+    <div class="container">
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Reach Out</h3>
+            <p>Call us or fill out the form below. We'll answer your questions with no pressure.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Assessment &amp; Tour</h3>
+            <p>Visit our house, meet the residents, and see if it's the right fit for your recovery.</p>
+          </div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Move In &amp; Begin</h3>
+            <p>Sign your agreement, move in, and start building the foundation for lasting sobriety.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="gallery">
+    <div class="container text-center">
+      <h2 class="section-title">Right Path House</h2>
+    </div>
+    <div class="gallery-carousel container">
+      <amp-carousel type="carousel" layout="fixed-height" height="140">
+        <amp-img src="images/house/photo-1.jpg" width="187" height="140" alt="Right Path House"></amp-img>
+        <amp-img src="images/house/photo-2.jpg" width="187" height="140" alt="Right Path House"></amp-img>
+        <amp-img src="images/house/photo-3.jpg" width="187" height="140" alt="Right Path House"></amp-img>
+        <amp-img src="images/house/photo-4.jpg" width="187" height="140" alt="Right Path House"></amp-img>
+        <amp-img src="images/house/photo-5.jpg" width="187" height="140" alt="Right Path House"></amp-img>
+        <amp-img src="images/house/photo-6.jpg" width="187" height="140" alt="Right Path House"></amp-img>
+        <amp-img src="images/house/photo-7.jpg" width="187" height="140" alt="Right Path House"></amp-img>
+        <amp-img src="images/house/photo-8.jpg" width="187" height="140" alt="Right Path House"></amp-img>
+      </amp-carousel>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container text-center">
+      <div class="section-label">Testimonials</div>
+      <h2 class="section-title">Stories of Recovery</h2>
+      <p class="section-sub">Hear from residents who rebuilt their lives with us.</p>
+    </div>
+    <div class="container">
+      <amp-carousel type="slides" layout="fixed-height" height="420" autoplay delay="8000" loop>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Living at Right Path House was an amazing experience — a natural next step after rehab. Without the immense support and structure I was given here, I do not know where I would be today. The women I met have become sisters to me, and Lisa and Pat are fiercely passionate about recovery. The nine months I stayed were truly transformational. This place saved my life."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">L.</div>
+            <div class="author-info">
+              <div class="author-name">Lauren</div>
+              <div class="author-detail">Alumni</div>
+            </div>
+          </div>
+          <div class="owner-reply">
+            <div class="owner-reply-label">Right Path House (Owner)</div>
+            <p>Thank you, Lauren for your kind words! You are a walking miracle, congrats on getting into NYU!!!</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"My wife and I were highly impressed with the guidance, care and support that our loved one received at Right Path House. Lisa Ferguson and her team of highly professional, compassionate and caring staff allowed her to continue her recovery in a safe, structured and loving environment. She was able to easily set up all the additional community services needed while living in a safe home. We are grateful to Right Path House. 5 Stars Right Path!"</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">K.T.</div>
+            <div class="author-info">
+              <div class="author-name">Kevin Toomey</div>
+              <div class="author-detail">Family Member</div>
+            </div>
+          </div>
+          <div class="owner-reply">
+            <div class="owner-reply-label">Right Path House (Owner)</div>
+            <p>We were impressed by you and your wife too Kevin. Thanks for letting us be a part of your families journey.</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"I really can't say enough positive things about Lisa, Rob, and Right Path. From the moment I arrived at Right Path I felt like I was at home and the women in the house (as well as Lisa, Rob, and Alyssa) have become my family. The house is absolutely beautiful, and the location is amazing (right by the beach!). Madison is such a cute, safe town, with a super tight knit AA and NA community. Right Path has offered me the structure, accountability, and support that I need while I build my life and career and I am forever grateful for the opportunity to live there."</blockquote>
+          <div class="testimonial-author">
+            <amp-img class="author-avatar-img" src="images/brittany-s.jpg" width="36" height="36" layout="fixed" alt="Brittany S."></amp-img>
+            <div class="author-info">
+              <div class="author-name">Brittany S.</div>
+              <div class="author-detail">Alumni</div>
+            </div>
+          </div>
+          <div class="owner-reply">
+            <div class="owner-reply-label">Right Path House (Owner)</div>
+            <p>Thank you, Brittany. It was awesome having you with us!</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"I stayed at Right Path House for almost 5 months and had a wonderful experience. Lisa, Rob and the staff were so helpful and supportive. They provided a perfect balance of workshops and activities that helped me learn about myself, work on my healing and empowered me to grow in a healthy way. There is also a thriving sober community in this area, so the meetings they took us to were some I will always cherish."</blockquote>
+          <div class="testimonial-author">
+            <amp-img class="author-avatar-img" src="images/alexandra-walton.jpg" width="36" height="36" layout="fixed" alt="Alexandra Walton"></amp-img>
+            <div class="author-info">
+              <div class="author-name">Alexandra Walton</div>
+              <div class="author-detail">Alumni</div>
+            </div>
+          </div>
+        </div>
+      </amp-carousel>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact" id="contact">
+    <div class="container text-center">
+      <div class="section-label">Get in Touch</div>
+      <h2 class="section-title">Take the First Step</h2>
+      <p class="section-sub">Fill out the form and our team will reach out within 24 hours. All inquiries are confidential.</p>
+    </div>
+    <div class="container">
+      <form method="post" action-xhr="https://example.com/api/contact" target="_top">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="situation">Current Situation</label>
+          <select id="situation" name="situation" required>
+            <option value="" disabled selected>Select one...</option>
+            <option value="leaving-treatment">Leaving a treatment program</option>
+            <option value="need-structure">Need more structure in recovery</option>
+            <option value="relapse-prevention">Relapse prevention</option>
+            <option value="family-inquiry">Inquiring for a family member</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Anything else we should know?</label>
+          <textarea id="message" name="message" placeholder="Tell us a bit about your situation (optional)"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Confidential Inquiry</button>
+        <div class="form-note">100% confidential. No obligation. We're here to help.</div>
+        <div submit-success>
+          <template type="amp-mustache">
+            <div class="submit-success">Thank you, {{name}}. We'll be in touch within 24 hours.</div>
+          </template>
+        </div>
+        <div submit-error>
+          <template type="amp-mustache">
+            <div class="submit-error">Something went wrong. Please call us directly at (555) 123-4567.</div>
+          </template>
+        </div>
+      </form>
+      <div class="form-phone-alt">Prefer to talk? Call <a href="tel:+15551234567">(555) 123-4567</a></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="logo">Right Path <span>House</span></div>
+      <div class="footer-address">1234 Hope Street, Suite 100, Springfield, ST 12345</div>
+      <a href="tel:+15551234567" class="footer-phone">(555) 123-4567</a>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Admissions</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 Right Path House. All rights reserved.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
