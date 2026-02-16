@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // Get the AMP source origin from the query string
   const sourceOrigin = req.query.__amp_source_origin || 'https://www.right-path-house.com';
 
@@ -19,11 +19,14 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Forward the form data to Web3Forms
+    // req.body is already parsed by Vercel (form-urlencoded or JSON)
+    const formData = req.body || {};
+
+    // Forward the form data to Web3Forms as JSON
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(req.body),
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(formData),
     });
 
     const data = await response.json();
@@ -31,8 +34,7 @@ export default async function handler(req, res) {
     if (data.success) {
       return res.status(200).json({
         success: true,
-        message: 'Form submitted successfully',
-        redirect: 'https://www.right-path-house.com/thank-you'
+        message: 'Form submitted successfully'
       });
     } else {
       return res.status(400).json({
@@ -43,7 +45,7 @@ export default async function handler(req, res) {
   } catch (error) {
     return res.status(500).json({
       success: false,
-      message: 'Server error. Please call us directly.'
+      message: 'Server error: ' + error.message
     });
   }
-}
+};
