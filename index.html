@@ -10,6 +10,7 @@
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <style amp-custom>
     /* ── Reset & Base ── */
@@ -30,6 +31,20 @@
     .logo span{color:#68d391}
     .nav-cta{background:#68d391;color:#1a365d;padding:8px 18px;border-radius:6px;font-size:14px;font-weight:600;transition:opacity .2s}
     .nav-cta:active{opacity:.8}
+    .menu-btn{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;padding:4px 8px;line-height:1}
+
+    /* ── Sidebar ── */
+    .sidebar{background:#1a365d;color:#fff;width:260px}
+    .sidebar-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.1)}
+    .sidebar-header .logo{font-size:16px}
+    .sidebar-close{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;padding:4px 8px;line-height:1}
+    .sidebar-nav{list-style:none;padding:12px 0}
+    .sidebar-nav li{border-bottom:1px solid rgba(255,255,255,.06)}
+    .sidebar-nav a{display:block;padding:14px 20px;font-size:15px;font-weight:600;color:#fff;transition:background .2s}
+    .sidebar-nav a:active{background:rgba(255,255,255,.08)}
+    .sidebar-nav .nav-icon{margin-right:10px;font-size:16px}
+    .sidebar-phone{display:block;margin:16px 20px;padding:12px;background:#68d391;color:#1a365d;border-radius:8px;text-align:center;font-size:15px;font-weight:700}
+    .sidebar-address{padding:12px 20px;font-size:12px;color:#a0c4e8;line-height:1.5}
 
     /* ── Gallery ── */
     .gallery{padding:32px 0 24px;background:#f7fafc}
@@ -146,11 +161,30 @@
   <header>
     <div class="container">
       <nav class="nav">
+        <button class="menu-btn" on="tap:sidebar.open" aria-label="Open menu">&#9776;</button>
         <div class="logo">Right Path <span>House</span></div>
         <a href="tel:+12033391191" class="nav-cta">Call Now</a>
       </nav>
     </div>
   </header>
+
+  <!-- Sidebar Menu -->
+  <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="left">
+    <div class="sidebar-header">
+      <div class="logo">Right Path <span>House</span></div>
+      <button class="sidebar-close" on="tap:sidebar.close" aria-label="Close menu">&#10005;</button>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="#" on="tap:sidebar.close"><span class="nav-icon">&#127968;</span>Home</a></li>
+      <li><a href="#features" on="tap:sidebar.close"><span class="nav-icon">&#10003;</span>What We Offer</a></li>
+      <li><a href="#how-it-works" on="tap:sidebar.close"><span class="nav-icon">&#128204;</span>How It Works</a></li>
+      <li><a href="#gallery" on="tap:sidebar.close"><span class="nav-icon">&#128247;</span>Photos</a></li>
+      <li><a href="#testimonials" on="tap:sidebar.close"><span class="nav-icon">&#11088;</span>Testimonials</a></li>
+      <li><a href="#contact" on="tap:sidebar.close"><span class="nav-icon">&#9993;</span>Contact</a></li>
+    </ul>
+    <a href="tel:+12033391191" class="sidebar-phone">Call (203) 339-1191</a>
+    <div class="sidebar-address">949 Boston Post Rd<br>Madison, CT 06443</div>
+  </amp-sidebar>
 
   <!-- Hero -->
   <section class="hero">
@@ -174,7 +208,7 @@
   </div>
 
   <!-- Features -->
-  <section class="features">
+  <section class="features" id="features">
     <div class="container text-center">
       <div class="section-label">What We Offer</div>
       <h2 class="section-title">Everything You Need to Thrive</h2>
@@ -207,7 +241,7 @@
   </section>
 
   <!-- How It Works -->
-  <section>
+  <section id="how-it-works">
     <div class="container text-center">
       <div class="section-label">How It Works</div>
       <h2 class="section-title">Your Path Forward</h2>
@@ -243,7 +277,7 @@
   </section>
 
   <!-- Photo Gallery -->
-  <section class="gallery">
+  <section class="gallery" id="gallery">
     <div class="container text-center">
       <h2 class="section-title">Right Path House</h2>
     </div>
@@ -262,7 +296,7 @@
   </section>
 
   <!-- Testimonials -->
-  <section class="testimonials">
+  <section class="testimonials" id="testimonials">
     <div class="container text-center">
       <div class="section-label">Testimonials</div>
       <h2 class="section-title">Stories of Recovery</h2>
