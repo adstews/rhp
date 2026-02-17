@@ -77,6 +77,33 @@
     }
     </script>
   </amp-analytics>
+  <!-- Google Ads Conversion Tracking -->
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+    {
+      "vars": {
+        "gtag_id": "AW-17957860634",
+        "config": {
+          "AW-17957860634": {
+            "groups": "default"
+          }
+        }
+      },
+      "triggers": {
+        "conversionPageview": {
+          "on": "visible",
+          "request": "event",
+          "vars": {
+            "event_name": "conversion",
+            "send_to": "AW-17957860634/zVdBCL3ogPobEJrq_PJC",
+            "value": "1.0",
+            "currency": "USD"
+          }
+        }
+      }
+    }
+    </script>
+  </amp-analytics>
 
   <header>
     <div class="container">
